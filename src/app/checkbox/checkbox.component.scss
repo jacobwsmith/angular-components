@@ -1,0 +1,48 @@
+:host {
+  position: relative;
+
+  .hidden-input {
+    // Setting position to absolute therefore
+    // the size of the system input (which varies)
+    // does not matter and labels can render properly
+    position: absolute !important;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+  }
+
+  .check-label-text {
+    cursor: pointer;
+  }
+
+  .check-label-box {
+    display: inline-flex;
+    align-self: center;
+    vertical-align: top;
+    position: relative;
+    height: 14px;
+    width: 14px;
+    border: 1px solid rgba(213, 214, 210, 1);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  // checked
+  .hidden-input:checked ~ .check-label-box {
+    background-color: rgba(0, 157, 217, 1);
+    border: 1px solid rgba(0, 157, 217, 1);
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -1px;
+      left: 4px;
+      width: 4px;
+      height: 10px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}

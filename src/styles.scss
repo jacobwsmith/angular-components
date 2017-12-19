@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family:
+  "Helvetica Neue",
+  -apple-system,
+  system-ui,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Arial;
+  font-size: 14px;
+  color: #777;
+}
+
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.mat-checkbox {
+  font-family: 'Helvetica Neue', Roboto, sans-serif;
+}
+.mat-checkbox-layout .mat-checkbox-label {
+  line-height: 24px;
+}
+.mat-checkbox-frame {
+  border-color: rgba(0, 0, 0, 0.54);
+}
+.mat-checkbox-checkmark {
+  fill: #fafafa;
+}
+.mat-checkbox-checkmark-path {
+  stroke: #fafafa !important;
+}
+.mat-checkbox-mixedmark {
+  background-color: #fafafa;
+}
+.mat-checkbox-checked.mat-primary .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-primary .mat-checkbox-background {
+  background-color: #3f51b5;
+}
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  // background-color: #ff4081;
+  background-color: rgba(0, 157, 217, 1);
+}
+.mat-checkbox-checked.mat-warn .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-warn .mat-checkbox-background {
+  background-color: #f44336;
+}
+.mat-checkbox-disabled.mat-checkbox-checked .mat-checkbox-background,
+.mat-checkbox-disabled.mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: #b0b0b0;
+}
+.mat-checkbox-disabled:not(.mat-checkbox-checked) .mat-checkbox-frame {
+  border-color: #b0b0b0;
+}
+.mat-checkbox-disabled .mat-checkbox-label {
+  color: #b0b0b0;
+}
+.mat-checkbox:not(.mat-checkbox-disabled).mat-primary
+  .mat-checkbox-ripple
+  .mat-ripple-element {
+  background-color: rgba(63, 81, 181, 0.26);
+}
+.mat-checkbox:not(.mat-checkbox-disabled).mat-accent
+  .mat-checkbox-ripple
+  .mat-ripple-element {
+  background-color: rgba(255, 64, 129, 0.26);
+}
+.mat-checkbox:not(.mat-checkbox-disabled).mat-warn
+  .mat-checkbox-ripple
+  .mat-ripple-element {
+  background-color: rgba(244, 67, 54, 0.26);
+}
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #e91e63;
+}
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: rgba(233, 30, 99, 0.5);
+}
+.mat-slide-toggle:not(.mat-checked) .mat-ripple-element {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.mat-slide-toggle .mat-ripple-element {
+  background-color: rgba(233, 30, 99, 0.12);
+}
+.mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled)
+  .mat-slide-toggle-thumb {
+  background-color: #3f51b5;
+}
+.mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled)
+  .mat-slide-toggle-bar {
+  background-color: rgba(63, 81, 181, 0.5);
+}
+.mat-slide-toggle.mat-primary:not(.mat-checked) .mat-ripple-element {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.mat-slide-toggle.mat-primary .mat-ripple-element {
+  background-color: rgba(63, 81, 181, 0.12);
+}
+.mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled)
+  .mat-slide-toggle-thumb {
+  background-color: #f44336;
+}
+.mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled)
+  .mat-slide-toggle-bar {
+  background-color: rgba(244, 67, 54, 0.5);
+}
+.mat-slide-toggle.mat-warn:not(.mat-checked) .mat-ripple-element {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
